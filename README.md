@@ -1,6 +1,6 @@
 ## Getting and Cleaning Data Course Project
 
-This is a introduction to how run.analysis.R retrieve data and make it tyde
+This is a introduction for how run.analysis.R to retrieve data and make it tidy
 
 
 
@@ -25,7 +25,7 @@ activity <- read.table(file = "./test/y_test.txt")
 
 
 
-### Give the activity the real name
+### Give the activity real name
 ```
 activitylabel <- read.table(file = "./activity_labels.txt")
 labels <- join(activity,activitylabel,"V1")
@@ -36,7 +36,7 @@ labels <- as.data.frame(labels[,2])
 
 ### Building test dataset
 
-Column conbine the test data and subject, activity accordingly
+Column conbine the test data, subject, activity accordingly
 
 ```
 testData <- read.table("./test/X_test.txt",colClasses = "numeric",nrows = 2947)
@@ -67,7 +67,7 @@ The two dataset both have 563 variables, so we can use rbind function to bind
 
 them together. Then we can read the feature file to get the actual measurement.
 
-use colnames() to give descriptive variable names.
+Use colnames() to give descriptive variable names.
 
 ```
 Feature <- read.table(file = "./features.txt")
@@ -81,7 +81,7 @@ colnames(alldata)[3:563] <- variables
 ### Tidy data
 
 Use grep funtion to extract the columns with names including "mean""std".
-Examin the variable name. I kept the upper case and "-" because it makes the 
+Examine the variable name. I kept the upper case and "-" because they make the 
 name easy to read.
 I use the gsub to delete "()" in the names because it is useless.
 Also, change the subject(int) to a factor variable
@@ -97,7 +97,7 @@ finaldata[,1] <- as.factor(finaldata[,1])
 
 First use melt function to transform all features into single variable
 This structure is easy to do data analysis.
-Using decast to calculate the mean of features about each activity and subject
+Using decast to calculate the mean of features about each activity and each subject
 
 ```
 meltvariable <- colnames(finaldata)[3:81]

@@ -48,14 +48,14 @@ These are the 79 meanmeasurements regarding the mean and std
 [46] "fBodyAcc-std-Z"                "fBodyAcc-meanFreq-X"           "fBodyAcc-meanFreq-Y"          
 [49] "fBodyAcc-meanFreq-Z"           "fBodyAccJerk-mean-X"           "fBodyAccJerk-mean-Y"          
 [52] "fBodyAccJerk-mean-Z"           "fBodyAccJerk-std-X"            "fBodyAccJerk-std-Y"           
-[55] "fBodyAccJerk-std-Z"            "fBodyAccJerk-meanFreq-X"       "fBodyAccJerk-meanFreq-Y"      
+[55] "fBodyAccJerk-std-Z"            "fBodyAccJerk-meanFreq-X"       "fBodyAccJerk-meanFre-Y"      
 [58] "fBodyAccJerk-meanFreq-Z"       "fBodyGyro-mean-X"              "fBodyGyro-mean-Y"             
 [61] "fBodyGyro-mean-Z"              "fBodyGyro-std-X"               "fBodyGyro-std-Y"              
 [64] "fBodyGyro-std-Z"               "fBodyGyro-meanFreq-X"          "fBodyGyro-meanFreq-Y"         
 [67] "fBodyGyro-meanFreq-Z"          "fBodyAccMag-mean"              "fBodyAccMag-std"              
-[70] "fBodyAccMag-meanFreq"          "fBodyBodyAccJerkMag-mean"      "fBodyBodyAccJerkMag-std"      
+[70] "fBodyAccMag-meanFreq"          "fBodyBodyAccJerkMag-mean"      "fBodyBodyAccJerkMa-std"      
 [73] "fBodyBodyAccJerkMag-meanFreq"  "fBodyBodyGyroMag-mean"         "fBodyBodyGyroMag-std"         
-[76] "fBodyBodyGyroMag-meanFreq"     "fBodyBodyGyroJerkMag-mean"     "fBodyBodyGyroJerkMag-std"     
+[76] "fBodyBodyGyroMag-meanFreq"     "fBodyBodyGyroJerkMag-mean"     "fBodyBodyGyroJerkM-std"     
 [79] "fBodyBodyGyroJerkMag-meanFreq"
 ```
 
@@ -65,7 +65,7 @@ These are the 79 meanmeasurements regarding the mean and std
 
 content: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17...30
 
-Instruction: all 30 people who took part in the experiment
+Explaination: all 30 people who take part in the experiment
 
 * Activity
 
